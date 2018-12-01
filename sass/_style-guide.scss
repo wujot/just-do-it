@@ -1,0 +1,27 @@
+body {
+	font-family: $roboto-font;
+	background-color: $background-color;
+}
+
+section {
+	margin: 40px 0;
+}
+
+h1 {
+	font-size: $h1-font-size;
+	color: $font-color;
+}
+
+h2 {
+	font-size: $h2-font-size;
+	color: $font-color;
+}
+
+h3 {
+	font-size: $h3-font-size;
+	color: $link-color;
+}
+
+a:hover {
+	text-decoration: none;
+}

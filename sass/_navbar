@@ -1,0 +1,79 @@
+.navbar {
+	height: 100vh;
+	width: 188px;
+	background-color: $menu-color;
+	.navbar-top {
+		display: flex;
+		justify-content: space-between;
+		img {
+			padding: 20px 20px;
+		}
+	}
+	.navbar-content {
+
+		border-bottom: 1px solid $number-color;
+		color: $nav-font-color;
+		.btn {
+			h4 {
+				font-size: $nav-font-size;
+			}
+			width: 100%;
+			text-align: left;
+			background-color: $menu-color;
+			border: none;
+			transition: $transition;
+			&:hover {
+				color: $white-color;
+				background-color: $nav-button-hover-background;
+				border-left: 4px solid $orange-color;
+			}
+			img {
+				padding: 0 10px;
+			}
+		}
+		.active {
+				color: $white-color;
+				background-color: $nav-button-hover-background;
+				border-left: 4px solid $orange-color;
+			}
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+	}
+	.navbar-bottom {
+		h4 {
+			margin: 20px 0;
+			color: $nav-font-color;
+			font-size: $nav-font-size;
+			padding: 0 20px;
+		}
+		h5 {
+			margin: 20px 0;
+			color: $link-color;
+			font-size: $nav-font-size;
+			padding: 0 20px;
+		}
+		@media screen and (max-width: 768px) {
+			display: none;
+		}
+
+	}
+	@media screen and (max-width: 768px) {
+			height: 60px;
+			transition: $transition;
+			.navbar-content, .navbar-bottom {
+				display: block;
+				transition: transform 0.3s;
+				transform-origin: top;
+				transition-delay: 0.2s;
+			    transform: scaleY(0);
+			}
+			&:hover {
+				height: 100vh;
+				.navbar-content, .navbar-bottom {
+					transform: scaleY(1);
+					
+				}
+			}
+		}
+}

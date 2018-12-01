@@ -1,0 +1,60 @@
+.top-panel {
+	height: 60px;
+	background-color: $white-color;
+	.account-top-buttons {
+		float: right;
+		h1, h2, h3, h4 {
+			margin: 0;
+			display: inline-block;
+		}
+		ul {
+			display: block;
+			li {
+				display: inline; 
+				line-height: 60px;
+				border-left: 2px solid $font-color;
+				padding: 0 20px;
+				#icon-wallet {
+					/* Style for "wallet" */
+					margin: 0 10px;
+					width: 17px;
+					height: 18px;
+					color: $font-color;
+				}
+				#icon-arrow-down {
+					/* Style for "arrow-down" */
+					margin: 0 10px;
+					width: 11px;
+					height: 7px;
+					color: $font-color;
+				}
+				#icon-notification {
+					/* Style for "notificati" */
+					width: 16px;
+					height: 17px;
+					color: $font-color;
+				}
+				#icon-profile {
+					/* Style for "profile" */
+					margin: 0 10px;
+					width: 17px;
+					height: 17px;
+					color: $font-color;
+				}
+				#icon-exit {
+					/* Style for "exit" */
+					width: 19px;
+					height: 15px;
+					color: #9c9c9c;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 768px) {
+		.account-top-buttons { 
+			h3, h1 {
+				display: none;
+			}
+		}
+	}
+}

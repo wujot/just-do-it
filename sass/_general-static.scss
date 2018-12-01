@@ -1,0 +1,83 @@
+.general-static {
+	height: auto;
+	display: flex;
+	justify-content: flex-end;
+	.card {
+		width: 80%;
+		margin: 0 40px;
+		background-color: $white-color;
+		.card-header {
+			border-bottom: 2px solid #e3e3e3;
+			h1 {
+				padding: 0 20px;
+				color: #a6a6a6;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 42px;
+				text-transform: uppercase;
+			}
+		}
+		.card-date-form {
+			padding: 35px;
+			border-bottom: 2px solid #e3e3e3;
+			input {
+				text-align: center;
+				height: 40px;
+				border: 1px solid #e3e3e3;
+				border-radius: 3px;
+			}
+			button {
+				width: 40px;
+				height: 40px;
+				margin: 0 20px;
+				background-color: $orange-color;
+				border: none;
+				border-radius: 3px;
+			}
+			@media screen and (max-width: 768px) { 
+
+			}
+		}
+		.card-table {
+			max-width: 655px;
+			margin: 0 auto;
+			table {
+				margin: 40px auto;
+				width: 250px;
+				tr {
+					th {
+						font-size: 16px;
+						color: #a6a6a6;
+						line-height: 42px;
+						border-bottom: 1px solid #e3e3e3;
+					}
+					td {
+						font-size: 16px;
+						color: #333333;
+						line-height: 42px;
+						border-bottom: 1px solid #e3e3e3;
+					}
+				}
+			}
+		}
+		.card-chart {
+			max-width: 655px;
+			margin: 0 auto;
+			img {
+				height: auto;
+				width: 100%;
+				margin: 40px auto;
+				padding: 0 20px;
+				max-width: 655px;
+			}
+			h1 {
+				padding: 0 20px;
+				color: #a6a6a6;
+				font-size: 16px;
+				font-weight: 500;
+				line-height: 42px;
+			}
+		}
+	}
+	
+}
