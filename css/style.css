@@ -346,10 +346,6 @@ body {
   background-color: #e7e5e5;
 }
 
-section {
-  margin: 40px 0;
-}
-
 h1 {
   font-size: 20px;
   color: #a6a6a6;
@@ -371,6 +367,10 @@ a:hover {
 
 /* Sections */
 .top-panel {
+  position: fixed;
+  top: 0;
+  z-index: 1;
+  width: 100%;
   height: 60px;
   background-color: #fff;
 }
@@ -440,6 +440,9 @@ a:hover {
 }
 
 .navbar {
+  position: fixed;
+  top: 0;
+  z-index: 1;
   height: 100vh;
   width: 188px;
   background-color: #191919;
@@ -536,6 +539,7 @@ a:hover {
 }
 
 .general-static {
+  margin-top: 100px;
   height: auto;
   display: -ms-flexbox;
   display: flex;
@@ -628,7 +632,36 @@ a:hover {
   line-height: 42px;
 }
 
+@media screen and (max-width: 1200px) {
+  .general-static .card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .general-static .card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .general-static .card {
+    width: 90%;
+  }
+  .general-static .card .card-date-form button {
+    margin: 20px 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .general-static {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
+}
+
 .links {
+  margin: 40px 0;
   height: auto;
   display: -ms-flexbox;
   display: flex;
@@ -705,5 +738,30 @@ a:hover {
 
 .links .card .card-links table tr:hover {
   background-color: #ede6e3;
+}
+
+@media screen and (max-width: 1200px) {
+  .links .card {
+    width: 75%;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .links .card {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links .card {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .links {
+    -ms-flex-pack: center;
+        justify-content: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
